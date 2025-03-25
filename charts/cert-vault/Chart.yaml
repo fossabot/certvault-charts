@@ -9,8 +9,8 @@ keywords:
   - certificate
   - management
 type: application
-version: 0.6.0
-appVersion: "0.6.0"
+version: 0.6.1
+appVersion: "0.6.1"
 maintainers:
   - email: lihaolin13@outlook.com
     name: gregPerlinLi
@@ -19,6 +19,10 @@ sources:
   - https://github.com/gregperlinli/certvault-charts
 dependencies:
   - name: redis
-    version: 20.11.3
+    version: 20.11.4
     repository: https://charts.bitnami.com/bitnami
     condition: redis.internal
+  - name: mysql
+    version: 12.3.2
+    repository: https://charts.bitnami.com/bitnami
+    condition: mysql.internal

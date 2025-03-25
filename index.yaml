@@ -2,6 +2,39 @@ apiVersion: v1
 entries:
   cert-vault:
   - apiVersion: v2
+    appVersion: 0.7.1
+    created: "2025-03-25T13:48:02.666780715Z"
+    dependencies:
+    - condition: redis.internal
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.11.4
+    - condition: mysql.internal
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.3.2
+    description: A Helm chart for CertVault self-signed SSL certificate management
+      platform backend server.
+    digest: e0ec3398d3623fa3e4864f2cd852362910626f24657664cbaf046a16162daeaa
+    home: https://github.com/gregperlinli/cert-vault
+    icon: https://raw.githubusercontent.com/gregPerlinLi/CertVault/refs/heads/main/frontend/public/favicon.svg
+    keywords:
+    - cert-vault
+    - self-sign
+    - certificate
+    - management
+    maintainers:
+    - email: lihaolin13@outlook.com
+      name: gregPerlinLi
+    name: cert-vault
+    sources:
+    - https://github.com/gregperlinli/cert-vault
+    - https://github.com/gregperlinli/certvault-charts
+    type: application
+    urls:
+    - https://github.com/gregPerlinLi/certvault-charts/releases/download/cert-vault-0.7.1/cert-vault-0.7.1.tgz
+    version: 0.7.1
+  - apiVersion: v2
     appVersion: 0.7.0
     created: "2025-03-25T09:34:28.738380574Z"
     dependencies:
@@ -880,4 +913,4 @@ entries:
     urls:
     - https://github.com/gregPerlinLi/certvault-charts/releases/download/cert-vault-0.0.1/cert-vault-0.0.1.tgz
     version: 0.0.1
-generated: "2025-03-25T09:34:28.739021973Z"
+generated: "2025-03-25T13:48:02.667009802Z"

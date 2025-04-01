@@ -9,8 +9,8 @@ keywords:
   - certificate
   - management
 type: application
-version: 1.0.0
-appVersion: "1.0.0"
+version: 1.1.0
+appVersion: "1.1.0"
 maintainers:
   - email: lihaolin13@outlook.com
     name: gregPerlinLi
@@ -26,3 +26,7 @@ dependencies:
     version: 12.3.2
     repository: https://charts.bitnami.com/bitnami
     condition: mysql.internal
+  - name: postgresql
+    version: 16.6.0
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.internal

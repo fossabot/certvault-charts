@@ -6,8 +6,8 @@ This Helm chart deploys the **CertVault** self-sign certificate management platf
 
 - **Chart Name**: `cert-vault`
 - **Description**: A Helm chart for CertVault self-signed SSL certificate management platform backend server.
-- **Version**: `1.8.7`
-- **App Version**: `1.8.7`
+- **Version**: `1.8.8`
+- **App Version**: `1.8.8`
 
 ## Prerequisites
 

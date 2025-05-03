@@ -9,8 +9,8 @@ keywords:
   - certificate
   - management
 type: application
-version: 2.3.8
-appVersion: "2.3.8"
+version: 2.4.0
+appVersion: "2.4.0"
 maintainers:
   - email: lihaolin13@outlook.com
     name: gregPerlinLi

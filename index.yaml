@@ -1,6 +1,66 @@
 apiVersion: v1
 entries:
   cert-vault:
+  - annotations:
+      artifacthub.io/images: |
+        - image: ghcr.io/gregperlinli/certvault:0.0.0
+          alias: CertVault
+        - image: bitnami/redis:20.11.4
+          alias: Redis
+        - image: bitnami/mysql:12.3.2
+          alias: MySQL
+        - image: bitnami/postgresql:16.6.0
+          alias: PostgreSQL
+      artifacthub.io/links: |
+        - name: support
+          url: https://github.com/gregPerlinLi/CertVault/issues
+      artifacthub.io/screenshots: |-
+        - title: Dashboard
+          url: https://raw.githubusercontent.com/gregPerlinLi/CertVault/main/docs/img/Screenshot2.png
+        - title: CA Certificate Management
+          url: https://raw.githubusercontent.com/gregPerlinLi/CertVault/main/docs/img/Screenshot1.png
+        - title: SSL Certificate Management
+          url: https://raw.githubusercontent.com/gregPerlinLi/CertVault/main/docs/img/Screenshot3.png
+        - title: User Management
+          url: https://raw.githubusercontent.com/gregPerlinLi/CertVault/main/docs/img/Screenshot4.png
+    apiVersion: v2
+    appVersion: 2.5.0
+    created: "2025-08-10T16:51:23.595345839Z"
+    dependencies:
+    - condition: redis.internal
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.11.4
+    - condition: mysql.internal
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.3.2
+    - condition: postgresql.internal
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.6.0
+    description: A Helm chart for CertVault self-signed SSL certificate management
+      platform backend server.
+    digest: 208a59aba33c520f919125a8c6354e9c7a8c3e216f4fc9faa478c63feb141ea0
+    home: https://github.com/gregperlinli/cert-vault
+    icon: https://raw.githubusercontent.com/gregPerlinLi/CertVault/refs/heads/main/frontend/public/favicon.svg
+    keywords:
+    - cert-vault
+    - self-sign
+    - certificate
+    - management
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - email: lihaolin13@outlook.com
+      name: gregPerlinLi
+    name: cert-vault
+    sources:
+    - https://github.com/gregperlinli/cert-vault
+    - https://github.com/gregperlinli/certvault-charts
+    type: application
+    urls:
+    - https://github.com/gregPerlinLi/certvault-charts/releases/download/cert-vault-2.5.0/cert-vault-2.5.0.tgz
+    version: 2.5.0
   - apiVersion: v2
     appVersion: 2.4.1
     created: "2025-05-08T12:38:24.700279979Z"
@@ -3319,4 +3379,4 @@ entries:
     urls:
     - https://github.com/gregPerlinLi/certvault-charts/releases/download/cert-vault-0.0.1/cert-vault-0.0.1.tgz
     version: 0.0.1
-generated: "2025-05-08T12:38:24.700642629Z"
+generated: "2025-08-10T16:51:23.59564983Z"

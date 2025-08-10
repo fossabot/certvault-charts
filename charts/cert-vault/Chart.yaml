@@ -9,8 +9,8 @@ keywords:
   - certificate
   - management
 type: application
-version: 2.5.0
-appVersion: "2.5.0"
+version: 2.5.1
+appVersion: "2.5.1"
 kubeVersion: ">= 1.19.0-0"
 maintainers:
   - email: lihaolin13@outlook.com
